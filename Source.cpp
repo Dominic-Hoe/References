@@ -5,6 +5,7 @@
 void Increment(int* value) {
 	// Careful - without dereferencing the pointer, you could be incrementing the pointer rather than
 	// the actual value in memory.
+	// Dereferencing is the "*" inside (*value). I wrap (*value) to avoid incrementing the pointer.
 
 	(*value)++;
 
